@@ -1,6 +1,7 @@
-cp ~/dotfiles/homefiles/.bashrc "$HOME"
-cp ~/dotfiles/homefiles/.bash_aliases "$HOME"
-cp ~/dotfiles/homefiles/.bash_ghusername "$HOME"
+ln -sf ~/dotfiles/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/.bash_aliases ~/.aliases
+ln -sf ~/dotfiles/.bash_ghusername ~/.bash_ghusername
+source ~/.bashrc
 if [ -f ~/.bash_ghusername ]; then
     . ~/.bash_ghusername
 fi
