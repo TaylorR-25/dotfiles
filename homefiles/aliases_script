@@ -1,8 +1,6 @@
-# mv ~/dotfiles/homefiles/.bashrc "$HOME"
 ln -s ~/dotfiles/.bashrc ~/.bashrc
-# mv ~/dotfiles/homefiles/.bash_aliases "$HOME"
-ln -s ~/dotfiles/.bashrc ~/.bash_aliases
-# mv ~/dotfiles/homefiles/.bash_ghusername "$HOME"
+ln -s ~/dotfiles/.bash_aliases ~/.bash_aliases
+ln -s ~/dotfiles/.bash_ghusername
 if [ -f ~/.bash_ghusername ]; then
     . ~/.bash_ghusername
 fi
