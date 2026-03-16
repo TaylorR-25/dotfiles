@@ -1,7 +1,7 @@
 ln -sf ~/dotfiles/.bashrc ~/.bashrc
 ln -sf ~/dotfiles/.bash_aliases ~/.aliases
 ln -sf ~/dotfiles/.bash_ghusername ~/.bash_ghusername
-source ~/.bashrc
+. ~/.bashrc
 if [ -f ~/.bash_ghusername ]; then
     . ~/.bash_ghusername
 fi
