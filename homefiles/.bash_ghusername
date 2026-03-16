@@ -1,0 +1,21 @@
+alias dl="sudo docker ps -l -q"
+
+alias dps="sudo docker ps"
+
+alias di="sudo docker images"
+
+alias dip="sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+
+alias dkd="sudo docker run -d -P"
+
+alias dki="sudo docker run -i -t -P"
+
+alias dex="sudo docker exec -i -t"
+
+alias dstop="docker stop $(docker ps -q)" # stop all
+
+alias drm="docker rm $(docker ps -a -q)" # remove all containers
+
+alias dclean="docker system prune -af" # clean system
+
+alias dlog="docker logs -f" # follow logs
