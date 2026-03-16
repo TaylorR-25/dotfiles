@@ -1,6 +1,6 @@
 ln -s ~/dotfiles/.bashrc ~/.bashrc
 ln -s ~/dotfiles/.bash_aliases ~/.bash_aliases
-ln -s ~/dotfiles/.bash_ghusername
+ln -s ~/dotfiles/.bash_ghusername ~/.bash_ghusername
 if [ -f ~/.bash_ghusername ]; then
     . ~/.bash_ghusername
 fi
