@@ -1,0 +1,8 @@
+mv ~/.bashrc ~/dotfiles/.bashrc
+ln -s ~/dotfiles/.bashrc ~/.bashrc
+mv ~/.bash_aliases ~/dotfiles/.bash_aliases
+ln -s ~/dotfiles/.bashrc ~/.bash_aliases
+mv ~/.bash_ghusername ~/dotfiles.bash_ghusername
+if [ -f ~/.bash_ghusername ]; then
+    . ~/.bash_ghusername
+fi
