@@ -1,6 +1,6 @@
-ln -sf ~/.bashrc ~/dotfiles/homefiles/.bashrc
-ln -sf ~/.bash_aliases ~/dotfiles/homefiles/.bash_aliases
-ln -sf ~/.bash_ghusername ~/dotfiles/homefiles/.bash_ghusername
+ln -sf .bashrc ~/dotfiles/homefiles/.bashrc
+ln -sf .bash_aliases ~/dotfiles/homefiles/.bash_aliases
+ln -sf .bash_ghusername ~/dotfiles/homefiles/.bash_ghusername
 if [ -f ~/.bash_ghusername ]; then
     . ~/.bash_ghusername
 fi
