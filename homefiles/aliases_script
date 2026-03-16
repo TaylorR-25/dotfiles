@@ -1,8 +1,8 @@
-mv ~/.bashrc "$HOME"
+mv ~/dotfiles/homefiles/.bashrc "$HOME"
 ln -s ~/dotfiles/.bashrc ~/.bashrc
-mv ~/.bash_aliases "$HOME"
+mv ~/dotfiles/homefiles/.bash_aliases "$HOME"
 ln -s ~/dotfiles/.bashrc ~/.bash_aliases
-mv ~/.bash_ghusername "$HOME"
+mv ~/dotfiles/homefiles/.bash_ghusername "$HOME"
 if [ -f ~/.bash_ghusername ]; then
     . ~/.bash_ghusername
 fi
