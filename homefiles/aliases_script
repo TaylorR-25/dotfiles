@@ -1,6 +1,3 @@
 ln -sf ~/dotfiles/homefiles/.bashrc ~/.bashrc
 ln -sf ~/dotfiles/homefiles/.bash_aliases ~/.bash_aliases
-ln -sf ~/dotfiles/homefiles/.bash_ghusername ~/.bash_ghusername
-. ~/.bashrc
-. ~/.bash_ghusername
 echo "Reload your enviroment through logging out and back in or this command source .bashrc"
