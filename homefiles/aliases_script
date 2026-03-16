@@ -1,7 +1,7 @@
-ln -sf ~/dotfiles/.bashrc ~/.bashrc
-ln -sf ~/dotfiles/.bash_aliases ~/.aliases
-ln -sf ~/dotfiles/.bash_ghusername ~/.bash_ghusername
-. ~/.bashrc
+ln -sf ~/.bashrc ~/dotfiles/homefiles/.bashrc
+ln -sf ~/.bash_aliases ~/dotfiles/homefiles/.bash_aliases
+ln -sf ~/.bash_ghusername ~/dotfiles/homefiles/.bash_ghusername
 if [ -f ~/.bash_ghusername ]; then
     . ~/.bash_ghusername
 fi
+echo "Reload your enviroment through logging out and back in or this command source .bashrc"
