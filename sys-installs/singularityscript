@@ -1,0 +1,38 @@
+#!/bin/bash
+if ! [ $(id -u) = 0 ]; then
+   echo "This script requires being run with sudo or root. "
+   exit 1
+fi
+if ! command -v apt &> /dev/null; then
+    echo "This script requires the apt package manager."
+    exit 1
+fi
+while true; do
+        read -p "Do you wish to install Singularity and it's dependencies?(y/n) " yn
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer y or n";;
+    esac
+done
+if command -v singularity &> /dev/null || [ -e "singularity" ]; then
+    echo "Make sure you don't have singularity already installed or a command with the same name."
+    exit 1
+fi
+apt-get update -y &> /dev/null
+apt-get install -y build-essential libseccomp-dev pkg-config squashfs-tools cryptsetup wget git libglib2.0-dev libfuse3-dev &> /dev/null
+GO_VERSION=1.21.0
+wget https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz &> /dev/null
+rm -rf /usr/local/go && tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz &> /dev/null
+export PATH=$PATH:/usr/local/go/bin
+export VERSION=4.1.0
+wget https://github.com/sylabs/singularity/releases/download/v${VERSION}/singularity-ce-${VERSION}.tar.gz &> /dev/null
+tar -xzf singularity-ce-${VERSION}.tar.gz &> /dev/null
+cd singularity-ce-${VERSION}
+./mconfig &> /dev/null
+make -C builddir &> /dev/null
+make -C builddir install &> /dev/null
+cd ..
+rm -rf singularity-ce-${VERSION}*
+rm go${GO_VERSION}.linux-amd64.tar.gz
+echo "Singularity has been installed. Run singularity to see a list of commands."
