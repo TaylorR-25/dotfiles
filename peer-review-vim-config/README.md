@@ -9,11 +9,11 @@ Plugins included:
 ## Installation                                                                                                                                         
 To set up this configuration on a new system:                                                                                                           
   1. clone the repository                                                         
-    - `git clone https://github.com/kan0sh1/dotfiles.git`                                                                                                 
+     `git clone https://github.com/kan0sh1/dotfiles.git`                                                                                                 
   2. navigate to the directory                                                                                                                            
   3. Run the install script                                                       
-    - `chmod +x install.sh`                                                       
-    - `./install.sh`
+     `chmod +x install.sh`                                                       
+     `./install.sh`
 
 Important notes on first run:                                                    
 On first run you will likely see an error stating E185: cannot find color scheme 'dracula'. This is expected.
