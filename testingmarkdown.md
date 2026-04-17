@@ -1,4 +1,4 @@
-#VIM Configuration
+# VIM Configuration
 ## Overview
 This configuration uses Vundle for plugin management,                                                                                               
 Plugins included:                                                               
@@ -13,6 +13,8 @@ To set up this configuration on a new system:
   2. navigate to the directory                                                                                                                            
   3. Run the install script                                                       
     - `chmod +x install.sh`                                                       
-    - `./install.sh`                                                                                                                                                                                                                  Important notes on first run                                                    On first run you will likely see an error stating E185: cannot find color scheme 'dracula'. This is expected.                                                                                                                   Vim tries to download before Vundle has finished downloading it. Script will proceed anyways. After it installs the plugins the error will dissapear when you next open vim.
+    - `./install.sh`
+Important notes on first run:
+On first run you will likely see an error stating E185: cannot find color scheme 'dracula'. This is expected.
+Vim tries to download before Vundle has finished downloading it. Script will proceed anyways. After it installs the plugins the error will dissapear when you next open vim.
 You complete me requires some extra work. After running the script you can insall the needed bits by 
--
