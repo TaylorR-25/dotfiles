@@ -2,6 +2,11 @@
 - This is a repo for setting up bash aliases, installing singularity, and setting up a color scheme for vim.
 - These are all set up through scripts that will download dependinces needed and edit files.
 # Instructions
+- Cloning the repo
+  - To clone the repo click the code button and then clone with https.
+  - The command would be `git clone https://github.com/TaylorR-25/dotfiles.git`
+  - Make sure to run this command in the home directory and not in another directory.
+  - For example `/home/Taylor`
 - homefiles
   - Clone the repo into your terminal.
   - And then run the `aliases_script`
